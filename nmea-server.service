@@ -1,0 +1,14 @@
+[Unit]
+Description=NMEA 0183 TCP server for GPS/IMU/ADC/Servo
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+User=dietpi
+Group=dietpi
+WorkingDirectory=/home/dietpi/nmea_server
+ExecStart=/home/dietpi/nmea_server/.venv/bin/python /home/dietpi/nmea_server/nmea_server.py
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target

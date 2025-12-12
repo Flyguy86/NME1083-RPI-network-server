@@ -1,0 +1,5 @@
+pyserial
+Adafruit-PCA9685
+Adafruit-ADS1x15
+git+https://github.com/RigacciOrg/py-qmc5883l.git#egg=py-qmc5883l
+smbus2
